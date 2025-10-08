@@ -1,0 +1,37 @@
+
+:root{
+  --bg:#0f0f10;
+  --gold:#c9a32b;
+  --text:#eee;
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:var(--bg);color:var(--text);}
+.container{width:90%;max-width:var(--max-width);margin:0 auto;}
+.site-header{position:fixed;top:0;left:0;right:0;background:transparent;z-index:10;padding:18px 0;}
+.header-inner{display:flex;align-items:center;justify-content:space-between;}
+.brand{color:var(--gold);font-weight:700;letter-spacing:4px;font-size:22px;}
+.nav{display:flex;gap:28px;align-items:center;}
+.nav a{color:var(--gold);text-decoration:none;font-size:14px;letter-spacing:2px;}
+.menu-btn{display:none;background:none;border:0;color:var(--gold);font-size:20px;}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding-top:80px;}
+.hero-inner{max-width:760px}
+.mark{color:var(--gold);font-size:34px;margin-bottom:8px;}
+.title{color:var(--gold);font-size:72px;margin:6px 0 6px;letter-spacing:6px;}
+.subtitle{margin:0;color:var(--gold);font-size:22px;opacity:0.95;}
+.lead{margin:20px 0 28px;color:#d9c88a;font-size:18px;}
+.btn{display:inline-block;text-decoration:none;background:var(--gold);color:#111;padding:14px 28px;border-radius:10px;font-weight:700;letter-spacing:1px;}
+.contacts{padding:60px 0 120px;}
+.contacts-inner{text-align:left;color:var(--gold);display:inline-block;padding:10px 0;}
+.contact-line{margin:6px 0;color:#f0d985}
+.contacts a{ color:#f7e7a9; text-decoration:none }
+.small{color:#777;margin-top:18px;font-size:13px}
+@media (max-width:720px){
+  .nav{display:none}
+  .menu-btn{display:block}
+  .title{font-size:48px}
+  .lead{font-size:16px}
+  .hero-inner{padding:40px 0}
+  .container{width:92%}
+  .contacts-inner{padding-top:40px}
+}

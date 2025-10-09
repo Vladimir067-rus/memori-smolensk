@@ -19,3 +19,27 @@
 .contacts-column{color:var(--gold);text-align:left}
 .divider{height:2px;background:linear-gradient(90deg,var(--gold),#b78a37);width:100%;max-width:300px;margin:18px auto;border-radius:2px;opacity:0.95}
 @media(max-width:900px){.services-list{grid-template-columns:1fr}.nav{display:none}.title{font-size:36px}.container{padding:18px}}
+.burger{
+  display:none;
+  background:none;
+  border:none;
+  font-size:28px;
+  color:var(--gold);
+  cursor:pointer;
+}
+
+@media(max-width:900px){
+  .burger{display:block}
+  .nav{
+    display:none;
+    flex-direction:column;
+    background:#1a1a1a;
+    position:absolute;
+    top:60px;
+    left:0;
+    width:100%;
+    text-align:center;
+    padding:12px 0;
+  }
+  .nav.show{display:flex}
+}

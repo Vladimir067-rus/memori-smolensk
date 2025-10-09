@@ -1,0 +1,21 @@
+
+:root{--bg:#111111;--gold:#d4af37;--muted:#9a8f6b;--text:#efefef;--maxw:1100px;font-family:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
+.container{max-width:var(--maxw);margin:0 auto;padding:28px}
+.header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{color:var(--gold);font-weight:700;letter-spacing:4px;font-size:20px}
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{color:var(--gold);text-decoration:none;font-weight:600;padding:8px;border-radius:6px}
+.nav a:hover{background:rgba(212,175,55,0.08)}
+.hero{padding:80px 0;text-align:center}
+.title{font-size:56px;color:var(--gold);margin:8px 0;letter-spacing:6px}
+.subtitle{color:var(--muted);margin-bottom:18px;font-size:18px}
+.lead{color:#d9c88a;margin-bottom:18px}
+.btn{display:inline-block;background:var(--gold);color:#111;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700}
+.content-block{padding:40px 0}
+.services-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px}
+.footer{border-top:1px solid rgba(212,175,55,0.06);padding:20px 28px;text-align:center;color:var(--muted);font-size:14px}
+.contacts-column{color:var(--gold);text-align:left}
+.divider{height:2px;background:linear-gradient(90deg,var(--gold),#b78a37);width:100%;max-width:300px;margin:18px auto;border-radius:2px;opacity:0.95}
+@media(max-width:900px){.services-list{grid-template-columns:1fr}.nav{display:none}.title{font-size:36px}.container{padding:18px}}

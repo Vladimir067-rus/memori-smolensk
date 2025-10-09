@@ -15,7 +15,7 @@
 .content-block{padding:40px 0}
 .services-list{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .service{background:rgba(255,255,255,0.02);padding:18px;border-radius:10px}
-.footer{border-top:1px solid rgba(212,175,55,0.06);padding:20px 28px;text-align:center;color:var(--muted);font-size:14px}
+.footer{padding:20px 28px;text-align:center;color:var(--muted);font-size:14px}
 .contacts-column{color:var(--gold);text-align:left}
 .divider{height:2px;background:linear-gradient(90deg,var(--gold),#b78a37);width:100%;max-width:300px;margin:18px auto;border-radius:2px;opacity:0.95}
 @media(max-width:900px){.services-list{grid-template-columns:1fr}.nav{display:none}.title{font-size:36px}.container{padding:18px}}

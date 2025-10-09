@@ -1,1 +1,0 @@
-Single-page MEMORI site. Put index.html and styles.css into the repository root (main) and enable GitHub Pages (root).
